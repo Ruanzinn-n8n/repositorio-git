@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>DL, DT, DD</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>O estudo de hoje é sobre LISTAS </h1>
+     <p> aprendi sobre <script> document.write(document.title)
+     </script>!</p>
+
+     <h3> Afinal oque é DL, DT e DD? </h3>
+    <dl>
+        <b><dt>DL</dt></b>
+          <i><dd>Definition List. DL é a tag que abre e fecha a lista de descrição</dd></i>
+        <b><dt>DT</dt></b>
+          <i><dd>Definition Term. DT é a tag do termo</dd></i>
+        <b><dt>DD</dt></b>
+          <i><dd>Definition Description. DD é a tag da descrição</dd></i>
+     </dl>
+
+     <h3>Lista Não Ordenada</h3>
+     <p>Marcada pelos seguintes simbolos usando o type após o ul ou il. Exemplo: ul type="example"</ul></p>
+     <ul>
+        <li>Disc ou vazio</li>
+        <li type="circle">Circle</li>
+        <li type="square">Square</li>
+     </ul>
+
+     <h3>Lista Encadeada ou Mista</h3>
+     <ul>
+        <li>Circle</li>
+        <ul type="circle"> <li>Vazado assim</ul></li>
+        <li>Square</li>
+        <ul type="square"><li>Obviamente quadrado</ul></li>
+     </ul>
+
+     <h3>Lista Ordenada</h3>
+     <ol>
+       <li>type="1" ou vazio para em números</li>
+       <li type="I">type="I" para em romano</li>
+       <li type="A">type="A" para em letras ou "a" para minúsculo</li>
+     </ol>
+
+     <h3>Lista Ordenada (começa onde quer)</h3>
+     <p>Mesma coisa porém adicionando o start="x" ou value="x"</p>
+     <ol start="3">
+      <li>Usando start="3" no ol</li>
+      <li>Usando start="3" no ol</li>
+      <li>Usando start="3" no ol</li>
+     </ol>
+
+     <h4>Ou...</h4>
+
+     <ol>
+      <li value="3">Usando value="3" no li> da minha escolha</li>
+      <li>Usando value="3" no li> da minha escolha</li>
+      <li>Usando value="3" no li> da minha escolha</li>
+      </ol>
+
+      <p>OBS: o value começa a contar apartir do li que colocou, se eu coloco o value apartir do<br>
+      segundo fica assim. Por exemplo:</p>
+      
+      <ol>
+      <li>Usando value="4" no segundo li></li>
+      <li value="4">Usando value="4" no segundo li></li>
+      <li>Usando value="4" no segundo li></li>
+      </ol>
+
+      <h3>Lista Ordenada Encadeada</h3>
+      <ol>
+        <b><p>Tipos de Listase e suas Tags</p></b>
+        <li>Não Ordenada</li>
+           <ol type="I">
+           <i><li>ul, li</li></i>
+           <i><li>types= disk, circle e square</li></i>
+           </ol>
+        <li>Ordenada</li>
+           <ol type="A">
+            <i><li>ol, li</li></i>
+            <i><li>types= 1, A, a, I e i</li></i>
+           </ol> 
+      </ol>
+      
+    </body>
+
+    <style>
+      body {background-color: #FF6600;}
+    </style>
+</html>

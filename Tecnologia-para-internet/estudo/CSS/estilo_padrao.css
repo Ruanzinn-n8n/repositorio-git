@@ -1,0 +1,9 @@
+body{
+     background-image: url(../CSS/miranha.jpg);
+     background-position-x:right;
+     background-attachment: fixed;
+}
+h1{
+    color: black;
+    background-color: red;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou eu?</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ruan Ferraz</h1>
+            <p id="mensagem"></p>
+        </header>
+    
+        <main>
+    
+        </main>
+    </div>
+
+    <script>
+
+        let nome = localStorage.getItem("nomeUsuario");
+
+        document.getElementById("mensagem").innerText =
+               "Iae " + nome + ", meu nome é Ruan"
+
+    </script>
+</body>
+</html>

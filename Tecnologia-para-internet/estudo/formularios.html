@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Inserindo formulários</h1>
+    <form method="get" action="dados.txt">
+        <fieldset>
+            <legend>Entrar</legend>
+            Login; <br><input type="text" id="login" name="login" size="31" maxlength="30" placeholder="email ou telefone" autofocus required/> <i>(text)</i>
+            <br>
+            Senha;<br> <input type="password" id="password" name="senha" size="25" maxlength="6" placeholder="6 digitos" required/> <i>(password)</i>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Te conhecendo melhor:</legend>
+            Como vc se identifica? <i>(select)</i><br> <select id="genero" name="sexo">
+                <option value="select">selecione</option>
+                <option value="Homem">Homem</option>
+                <option value="homi">cabra macho</option>
+                <option value="mulher">Mulher</option>
+                <option value="lgbtqiapghf+">lgbtqiapghf+</option>
+            </select>
+            <br>Qual seu estilo musical?<i>(datalist)</i><br>
+            <input id="lista" name="estilo" type="text" list="musicas"/><br>
+             <datalist id="musicas"><br> Escolha entre:
+                <option value="pagode">Pagode</option>
+                <option value="pagodinho">Pagodinho</option>
+                <option value="funk">Funk</option>
+                <option value="bregafunk">BregaFunk</option>
+                <option value="forro">Forró</option>
+            </datalist>
+            <b>Qual seu tipo de cabelo?</b><i>(radio)</i><br>
+            <input type="radio" id="opt1" name="hairtype" value="cacheado"><label for="opt1">Cacheado</label><br>
+            <input type="radio" id="opt2" name="hairtype" value="liso"><label for="opt2">Liso</label>
+            <br>
+            <b>Quais esportes vc pratica?</b><i>(checkbox)</i><br>
+            | <input type="checkbox" name="volei" value="volei">Volei |
+            | <input type="checkbox" name="futsal" value="futsal">Futsal 
+            | <input type="checkbox" name="Handball" value="Handball">Handball 
+            | <input type="checkbox" name="skate" value="skate">Skate |
+            <br><br>
+            <b>fale um pouco sobre vc;</b><i>(textarea)</i><br>
+            <textarea name="msg" rows="10" cols="40">Fale comigo!</textarea>
+        </fieldset><br>
+        <input type="submit" value="enviar"/>
+    </form>
+    
+</body>
+</html>

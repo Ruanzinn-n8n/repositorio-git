@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deixe sua avaliação</title>
+    <style>
+        body{
+            background-image: url(../Ruan_Pablo_Ferraz_Ramos_de_Souza/imagens/back.jpg), url(../Ruan_Pablo_Ferraz_Ramos_de_Souza/imagens/back.jpg);
+            background-size: 20% , 20%;
+            background-repeat: repeat-y , repeat-y;
+            background-position: right , left;
+            background-attachment: scroll;
+        }
+        main{
+            position: absolute;
+            left: 50%;
+            top: 27%;
+            transform: translateX(-50%);
+            font-size: 20px;
+        }
+        fieldset{
+            border: 3px solid #1F3C88;
+        }
+        .faixa{
+            background-color: #1F3C88;
+            margin: -8px;
+            padding: 80px;
+        }
+        .pergunta{
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            transform: translateX(-50%);
+        }
+        .info{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            top: 12%;
+            transform: translateX(-50%)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="pergunta">Deixe a sua avaliação!</h1>
+        <i class="info">Por favor, a sua avaliação é importante para mim</i>
+    </header>
+    <div class="faixa"></div>
+    <main>
+        <form method="get" action="obrigado.html">
+            <fieldset>
+                <legend>Começe aqui</legend>
+                Qual seu nome? <br><input type="text" id="nome" size="30" maxlength="10" placeholder="Digite aqui"/>
+                 <br><br>
+                Dê uma nota <i>De 1 a 5</i><br>
+                   <input type="radio" id="opt1" name="nota" value="1"><label for="opt1">1 😡</label>
+                   <input type="radio" id="opt2" name="nota" value="2"><label for="opt2">2 ☹️</label>
+                   <input type="radio" id="opt3" name="nota" value="3"><label for="opt3">3 😐</label>
+                   <input type="radio" id="opt4" name="nota" value="4"><label for="opt4">4 😄</label>
+                   <input type="radio" id="opt5" name="nota" value="5"><label for="opt5">5 🤩</label>
+                 <br><br>
+                Qual a página que você mais gostou?<br>
+                <select id="select" name="página">
+                    <option value="select">...</option>
+                    <option value="principal">index.html</option>
+                    <option value="links">links.html</option>
+                    <option value="imagens">imagens.html</option>
+                    <option value="avaliação">fale_conosco.html</option>
+                </select>
+                <br><br>
+                Oque acha que pode melhorar?<br>
+                <textarea name="opniao" rows="10" cols="30">Seja sincero!</textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="avaliar">
+        </form>
+    </main>
+</body>
+</html>
