@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem sou eu?</title>
+    <title>Oi!</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Ruan Ferraz</h1>
-            <p id="mensagem"></p>
-        </header>
-    
-        <main>
-    
-        </main>
-    </div>
+  <div class="container">
+    <header>
+      <h1>Quem é você?</h1>
+    </header>
+    <main>
+      <form method="get" action=""></form>
 
-    <script>
+      <div class="input-box">
+        <input id="nome" placeholder="Seu nome" type="text" required>
+        <i class="bx bxs-user"></i>
+      </div>
 
-        let nome = localStorage.getItem("nomeUsuario");
+      <button onclick="continuar()" type="button" class="entrar">Começar</button>
 
-        document.getElementById("mensagem").innerText =
-               "Iae " + nome + ", meu nome é Ruan"
+      </form>
 
-    </script>
+    </main>
+</div>
+
+<script>
+
+    function continuar() {
+        let nome = document.getElementById("nome").value;
+
+        localStorage.setItem("nomeUsuario", nome);
+
+        window.location.href = "portifolio.html";
+    }
+
+</script>
+
 </body>
+
 </html>

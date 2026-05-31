@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou eu?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "josefin sans", sans-serif;
+        }
+
+        body{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p id="mensagem"></p>
+        </header>
+    
+        <main>
+            <div class="input-box-me">
+                <a href="https://github.com/Ruanzinn-n8n" target="_blank" title="Github"><img class="img" src="ruan.png" alt="Minha foto"></a>
+                <h1>Ruan Ferraz</h1>
+                <p>Tenho 18 anos e sou estudande de engenharia de software.<br>
+                    Sou de Divisa Alegre, uma cidade bem do interior de Minas Gerais e desde pequeno já tinha<br> 
+                    afinidade com tecnologia, sempre gostei de mexer em computadores e aprender coisas novas. E<br>
+                    hoje estou aqui... e já me vejo como sênior em uma grande empresa.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+
+        let nome = localStorage.getItem("nomeUsuario");
+
+        document.getElementById("mensagem").innerText =
+               "Iae " + nome + ", deixa eu me apresentar..."
+
+    </script>
+</body>
+</html>
