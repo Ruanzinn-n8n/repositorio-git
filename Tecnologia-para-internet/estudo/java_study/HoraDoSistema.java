@@ -1,16 +1,16 @@
-import java.util.Date;
+import java.time.LocalTime;
 import java.util.Locale;
 
 public class HoraDoSistema {
-
     public static void main(String[] args) {
-        Date dataehora = new Date();
-        Locale language = new Locale();
+        LocalTime dataehora = LocalTime.now();
+        Locale language = Locale.getDefault();
+        int hora = dataehora.getHour();
+        int minuto = dataehora.getMinute();
+        String lingua = language.getDisplayLanguage();
 
-        System.out.print("A hora do sistema é: ");
-        System.out.println(dataehora.toString());
-        System.out.print("Seu sistema está em ");
-        System.out.println(language.toString());
+        System.out.println("Agora são: " + hora + " horas e " + minuto + " minutos!");
+        System.out.print("E seu sistema está em " + lingua);
     }
     
 }
